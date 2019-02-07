@@ -13,11 +13,11 @@ class Trabajador(Persona):
         self.cargo = cargo 
 
     def get_Datos(self):
-        return Persona.get_Datos(self)
+        return Persona.get_Datos(self) + "\t" + self.cargo
 
 
 p = Persona('Marge','Simpson')
 print(p.get_Datos())
 
-t = Trabajador('Homero','Simpson','obrero')
+t = Trabajador('Homero','Simpson','fronted developer')
 print(t.get_Datos()) 
