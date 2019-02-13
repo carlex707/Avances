@@ -1,0 +1,14 @@
+def filtro(lista):
+    valor = str(input("Ingrese lo que desea buscar: "))
+    resultado = []
+    cadena =" "
+
+    for i in range(0,len(lista)):
+        cadena=lista[i]
+
+        if cadena.find(valor) != -1:  # find devuelve -1 si no encuentra palabra
+            resultado.append(cadena)
+    print(resultado)
+
+
+filtro(["carla villarroel ", "fredy mamani copaly", "thiago mamani villarroel", "reddy villarroel"])
