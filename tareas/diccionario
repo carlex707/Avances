@@ -1,0 +1,9 @@
+def diccionario(d):
+    orden= str(input("ingrese TRUE si desea ordenar de forma ascendente y FALSE de forma descendente: "))
+    lista=d.items()
+    if orden == "true":
+        lista=sorted(lista, key=lambda t: t[0])
+    else:
+        lista = sorted(lista, key=lambda t: t[0], reverse=True)
+    print(lista)
+diccionario({'jack':5, 'bill': 14, 'katy':3, 'jess': 33, 'thiago': 18, 'alex': 34})
