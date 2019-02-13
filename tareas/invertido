@@ -1,0 +1,11 @@
+def invertido():
+    numero = input ("Ingrese un numero:")
+    invertido = numero [::-1]
+    try:
+        valor = int (numero)
+        print("El numero invertido es: ", invertido)
+    except ValueError:
+        print("El valor ingresado no es un numero no valido")
+
+
+invertido()
