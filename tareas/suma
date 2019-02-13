@@ -1,0 +1,21 @@
+def sumar():
+
+    try:
+        numero1 = int(input('introduce el valor del primer numero:'))
+        numero2 = int(input('introduce el valor del segundo numero:'))
+        suma = 0
+        if numero1 < numero2:
+            inicio = numero1 + 1
+            fin = numero2 - 1
+        else:
+            inicio = numero2 + 1
+            fin = numero1 -1
+        while inicio <= fin:
+            suma = suma + inicio
+            inicio += 1
+        print("La suma es: ", suma)
+
+
+    except ValueError:
+        print("Valores no validos")
+sumar()
