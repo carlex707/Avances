@@ -1,0 +1,16 @@
+def exagono():
+    lado = int(input("ingrese el tamaño de los lados del exagono: "))
+    espacio = lado-1
+    asterisco = lado
+    for i in range(0,lado):
+        print(espacio * " ", asterisco*"*")
+        asterisco += 2
+        espacio -= 1
+    espacio = 1
+    asterisco -= 4
+    for i in range(0,lado-1):
+        print(espacio * " ", asterisco*"*")
+        espacio += 1
+        asterisco -= 2
+
+exagono()

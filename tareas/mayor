@@ -1,0 +1,20 @@
+def mayor():
+    try:
+        tamaño = int(input("Ingrese el tamaño de la lista: "))
+        i=0
+        lista =[]
+        while i < tamaño:
+             numero = int(input("Ingrese los valores de la lista: "))
+             lista.append(numero)
+             i += 1
+
+        may = 0
+        for i in range(0,len(lista)):
+            if lista[i]>may:
+                may = lista[i]
+
+        print("El numero mayor de la lista es: ",may)
+    except ValueError:
+        print("Ingrese numero entero")
+
+mayor()

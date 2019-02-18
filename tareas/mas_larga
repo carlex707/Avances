@@ -1,0 +1,12 @@
+def mas_larga():
+    palabra1= input("Ingrese la primera palabra: ")
+    palabra2 =input("Ingrese la segunda palabra: ")
+
+    if (len(palabra1)) > (len(palabra2)):
+        tamaño = len(palabra1) - len(palabra2)
+        print ("La palabra" , palabra1, " tiene", tamaño, "letras mas que", palabra2)
+    else:
+        tamaño = len(palabra2) - len(palabra1)
+        print ("La palabra" , palabra2, " tiene", tamaño, "letras mas que", palabra1)
+
+mas_larga()
