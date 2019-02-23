@@ -1,0 +1,42 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>planilla de trabajadores</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <script src="{% static 'js/home.js' %}"></script>
+</head>
+
+
+<body>
+    <h1>PLANILLA DE TRABAJADORES</h1>
+
+    <table align="center" cellspacing="2" cellpadding="2" border="1" bgcolor=7a54877>
+
+        <tr>
+            <th>identificador</th>
+            <th>nombre</th>
+            <th>anios de trabajo</th>
+            <th>proyecto</th>
+            <th>cargo</th>
+        </tr>
+      <tbody>
+        {% for empleado in empleados%}
+         <tr>
+             <td align="center">{{empleado.identificador}}</td>
+             <td align="center">{{empleado.nombre}}</td>
+             <td align="center">{{empleado.antiguedad}}</td>
+             <td align="center">{{empleado.proyecto}}</td>
+             <td align="center">{{empleado.cargo}}</td>
+
+         </tr>
+
+      {% endfor%}
+       </tbody>
+    </table>
+
+
+
+</body>
+</html>
